@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/all.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <title>Home</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="last-header">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-6">
+            <ul class="nav">
+              <li class="nav-item home-li">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >home<i class="fas fa-angle-down"></i
+                ></a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  >about<i class="fas fa-angle-down"></i
+                ></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  href="#"
+                  >Menu<i class="fas fa-angle-down"></i
+                ></a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" aria-disabled="true"
+                  >Blog<i class="fas fa-angle-down"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a href="./shop.html" class="nav-link" aria-disabled="true"
+                  >Shop<i class="fas fa-angle-down"></i
+                ></a>
+              </li>
+              <li
+                class="nav-item"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                <a class="nav-link" aria-disabled="true">Contact</a>
+              </li>
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <form>
+                        <div class="input mb-4">
+                          <input
+                            type="text"
+                            placeholder="your name"
+                            class="form-control"
+                            id="recipient-name"
+                          />
+                        </div>
+                        <div class="input mb-4">
+                          <input
+                            type="text"
+                            placeholder="phone"
+                            class="form-control"
+                            id="recipient-name"
+                          />
+                        </div>
+                        <div class="input mb-4">
+                          <input
+                            type="text"
+                            placeholder="email address"
+                            class="form-control"
+                            id="recipient-name"
+                          />
+                        </div>
+                        <div class="input mb-4">
+                          <textarea
+                            class="form-control"
+                            placeholder="message"
+                            id="message-text"
+                          ></textarea>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="modal-btn"
+                        data-bs-dismiss="modal"
+                      >
+                        Send message
+                      </button>
+                    </div>
+                    <div class="shape-1"></div>
+                    <div class="shape-2"></div>
+                  </div>
+                </div>
+              </div>
+            </ul>
+
+            <div class="ul-icon dropdown">
+              <i
+                class="fas fa-bars"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              ></i>
+
+              <ul
+                class="dropdown-menu icon-details"
+                aria-labelledby="dropdownMenuButton1"
+              >
+                <li><a class="dropdown-item" href="#">Home</a></li>
+                <li><a class="dropdown-item" href="#">About</a></li>
+                <li><a class="dropdown-item" href="#">Menu</a></li>
+                <li><a class="dropdown-item" href="#">Blog</a></li>
+                <li><a class="dropdown-item" href="#">Gallery</a></li>
+                <li><a class="dropdown-item" href="#">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-2">
+            <img src="./images/logo.svg" class="img-fluid" alt="" />
+          </div>
+          <div
+            class="col-4 h-icons d-flex align-items-center justify-content-end"
+          >
+          <div class="d-flex gap-4" id="links">
+            <div class="right-icons">
+              <a href="./register.html"><i class="fas fa-user"> Register</i></a>
+            </div>
+              <div class="right-icons position-relative me-4">
+                <a href="./login.html"><i class="fas fa-sign-in-alt"> sign in</i></a>
+              </div>
+          </div>
+          
+            <div class="head-log" id="user_info" >
+              <div class="" id="user"></div>
+             
+          <div class="ic shopping_cart me-5">
+                
+            <i class="fas fa-briefcase"></i>
+          <span class="badge">0</span>
+          <div class="carts_products">
+            <div class="cart-list"></div>
+           <a href="cartProducts.html">View All Products</a>
+          </div>
+       </div>
+
+       <div class="right-icons">
+        <a id="logout"><i class="fas fa-sign-in-alt fs-4"></i></a>
+      </div>
+
+         
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN  -->
+
+    <main>
+      <div class="overlay">
+        <div class="main-list">
+          <ul class="nav align-items-center">
+            <li class="nav-item home-li">
+              <a
+                class="nav-link d-flex align-items-center justify-content-between active"
+                aria-current="page"
+                href="#"
+                >home<i class="fas fa-angle-down"></i
+              ></a>
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link d-flex align-items-center justify-content-between"
+                href="#"
+                >about<i class="fas fa-angle-down"></i
+              ></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link d-flex align-items-center justify-content-between"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                href="#"
+                >Menu<i class="fas fa-angle-down"></i
+              ></a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link d-flex align-items-center justify-content-between"
+                aria-disabled="true"
+                >Blog</a
+              >
+            </li>
+
+            <button class="nav-item nav-item-btn">
+              <a
+                href="#"
+                class=" d-flex justify-content-center align-items-center gap-2"
+                ><i class="fas fa-search"></i> Search</a
+              >
+            </button>
+
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <form>
+                      <div class="input mb-4">
+                        <input
+                          type="text"
+                          placeholder="your name"
+                          class="form-control"
+                          id="recipient-name"
+                        />
+                      </div>
+                      <div class="input mb-4">
+                        <input
+                          type="text"
+                          placeholder="phone"
+                          class="form-control"
+                          id="recipient-name"
+                        />
+                      </div>
+                      <div class="input mb-4">
+                        <input
+                          type="text"
+                          placeholder="email address"
+                          class="form-control"
+                          id="recipient-name"
+                        />
+                      </div>
+                      <div class="input mb-4">
+                        <textarea
+                          class="form-control"
+                          placeholder="message"
+                          id="message-text"
+                        ></textarea>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="modal-btn"
+                      data-bs-dismiss="modal"
+                    >
+                      Send message
+                    </button>
+                  </div>
+                  <div class="shape-1"></div>
+                  <div class="shape-2"></div>
+                </div>
+              </div>
+            </div>
+          </ul>
+        </div>
+
+        <div class="harder-text">
+          <img src="images/main/slider-decor.png" alt="" />
+          <p>We make finding the right car simple</p>
+
+          <h1>Search Less. Live More.</h1>
+
+          <div class="d-flex gap-4">
+            <button class="inventory">
+              <a
+                href="#"
+                class="d-flex justify-content-center align-items-center gap-3"
+                >View Inventory<i class="fas fa-long-arrow-alt-up"></i
+              ></a>
+            </button>
+            <button class="contact-us">
+              <a
+                href="#"
+                class="d-flex justify-content-center align-items-center gap-3"
+                >Contact Us<i class="fas fa-long-arrow-alt-up"></i
+              ></a>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- <svg
+        class="main-svg"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+      >
+        <path
+          fill="#1eacc7"
+          fill-opacity="1"
+          d="M0,256L12.6,229.3C25.3,203,51,149,76,144C101.1,139,126,181,152,186.7C176.8,192,202,160,227,160C252.6,160,278,192,303,176C328.4,160,354,96,379,96C404.2,96,429,160,455,176C480,192,505,160,531,165.3C555.8,171,581,213,606,218.7C631.6,224,657,192,682,186.7C707.4,181,733,203,758,181.3C783.2,160,808,96,834,90.7C858.9,85,884,139,909,160C934.7,181,960,171,985,149.3C1010.5,128,1036,96,1061,85.3C1086.3,75,1112,85,1137,96C1162.1,107,1187,117,1213,128C1237.9,139,1263,149,1288,138.7C1313.7,128,1339,96,1364,80C1389.5,64,1415,64,1427,64L1440,64L1440,320L1427.4,320C1414.7,320,1389,320,1364,320C1338.9,320,1314,320,1288,320C1263.2,320,1238,320,1213,320C1187.4,320,1162,320,1137,320C1111.6,320,1086,320,1061,320C1035.8,320,1011,320,985,320C960,320,935,320,909,320C884.2,320,859,320,834,320C808.4,320,783,320,758,320C732.6,320,707,320,682,320C656.8,320,632,320,606,320C581.1,320,556,320,531,320C505.3,320,480,320,455,320C429.5,320,404,320,379,320C353.7,320,328,320,303,320C277.9,320,253,320,227,320C202.1,320,177,320,152,320C126.3,320,101,320,76,320C50.5,320,25,320,13,320L0,320Z"
+        ></path>
+      </svg> -->
+    </main>
+
+    <!-- FIND -->
+    <section class="find">
+      <div class="find-decore"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <div class="find-content">
+              <img class="img-fluid d-block m-auto" src="./images/find/logo-sm-min.png" alt="">
+<div class="first-line"></div>
+            <h2>FIND YOUR DREAM CAR</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+         
+          <div class="col-12">
+            <form class="d-flex justify-content-center  gap-2">
+              <div class="single">
+                <label for="">select make</label>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              </div>
+              <div class="single">
+                <label for="">select a model</label>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              </div>
+              <div class="single">
+                <label for="">Purpose</label>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              </div>
+              <button >Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHO WE ARE -->
+    <section class="who-we-are">
+      <div class="container">
+        <div class="row row-1">
+          <div class="col-6">
+            <div class="left-content">
+              <small>who we are</small>
+              <h2>Make your car shine from the inside out</h2>
+             
+              <div class="strips"></div>
+           
+            </div>
+          </div>
+
+          <div class="col-6">
+            <div class="right-content">
+              <h5>Dictumst arcu hac ultrices aptent tristique consectetuer. Faucibus facilisi interdum mollis sodales duis fames. Dictumst montes est letius tincidunt ut accumsan donec.</h5>
+              <button>DISCOVER MORE</button>
+              <!-- <a
+              href="#"
+              class="foot-btn text-center"
+              >DISCOVER MORE</i
+            ></a> -->
+            </div>
+          </div>
+        </div>
+
+        <div class="row align-items-center">
+          <div class="col-4">
+            <div class="review d-flex flex-column justify-content-center gap-3">
+              <i class="fas fa-quote-left"></i>
+              <p>We’ve taken the hassle out of getting your car detailed without taking away the quality or results</p>
+              <h5>Donald M. Dobso</h5>
+            </div>
+          </div>
+          <div class="col-4">
+            <div>
+              <img class="img-fluid" src="./images/whoWeAre/new-car-dashboard.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-4">
+            <div>
+              <img class="img-fluid" src="./images/whoWeAre/lamborghini.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATISTICS -->
+    <section class="statistics">
+     
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+             <img src="./images/statistics/home-page-left-figure-min.png" alt="">
+          </div>
+          <div class="col-4 text-center">
+            <div class="statistics-content text-white 
+            d-flex justify-content-center 
+            align-items-center">
+             <div class="left d-flex flex-column justify-content-center 
+             align-items-start">
+              <div class="top d-flex flex-column 
+              align-items-start">
+                <h3>3884</h3>
+                <h5>VEHICLES STOCK</h5>
+              </div>
+              <div class="bot d-flex flex-column 
+              align-items-start">
+              <h3>1454+</h3>
+                <h5>VEHICLES ON SALE</h5>
+                <!-- <h3>300+</h3>
+                <h5>DEALERS SERVED</h5> -->
+              </div>
+             </div>
+             <div class="right d-flex flex-column justify-content-center 
+             align-items-end">
+              <div class="top d-flex flex-column 
+              align-items-end">
+                
+                <h3>300+</h3>
+                <h5>DEALERS SERVED</h5>
+              </div>
+              <div class="bot d-flex flex-column 
+              align-items-end">
+                <h3>6419</h3>
+                <h5>HAPPY CUSTOMERS</h5>
+              </div>
+             </div>
+            
+            </div>
+          </div>
+
+          <div class="col-4">
+            <img src="./images/statistics/home-page-right-figure-min.png" alt="">
+          </div>
+        </div>
+       
+      </div>
+    </section>
+
+    <!-- DEAL OF THE WEEK -->
+    <section class="deal-of-week">
+      <div class="deal-of-week-decore"></div>
+
+      <div class="container">
+        <h2>Deals Of The Week</h2>
+        <div class="row">
+          <div class="col-6">
+            <div class="left side">
+              <div class="img">
+                <img src="./images/deelsOfWeek/slider-image-car-1-min.png" alt="">
+              </div>
+              <div class="left-content side-content">
+                <div class="price d-flex align-items-center justify-content-between">
+                  <span class="name">Citroen C4</span>
+                  <span class="price-all">MSRP<span class="special-price">$38,300</span></span>
+                </div>
+                <div class="shapes">
+                  <div class="single-shape">
+                    <div class="inner-shape">
+                      <div class="shape-content">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <span>58kmi</span>
+                      </div>
+                    </div>
+                   
+                  </div>
+
+                  <div class="single-shape">
+                    <div class="inner-shape">
+                      <div class="shape-content">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <span>28/35</span>
+                      </div>
+                    </div>
+                   
+                  </div>
+
+                  <div class="single-shape">
+                    <div class="inner-shape">
+                      <div class="shape-content">
+                        <i class="fas fa-gas-pump"></i>
+                        <span>Automatic</span>
+                      </div>
+                    </div>
+                   
+                  </div>
+
+                  <div class="single-shape">
+                    <div class="inner-shape">
+                      <div class="shape-content">
+                        <i class="fas fa-car-side"></i>
+                        <span>2017</span>
+                      </div>
+                    </div>
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <div class="right side">
+              <div class="img">
+                <img src="./images/deelsOfWeek/slider-image-car-2-min.png" alt="">
+              </div>
+              <div class="right-content side-content">
+                <div class="price d-flex align-items-center justify-content-between">
+                  <span class="name">Lexus RX</span>
+                  <span class="price-all">MSRP<span class="special-price">$60,400</span></span>
+                </div>
+                <div class="shapes">
+                  <div class="single-shape">
+                    <div class="inner-shape">
+                      <div class="shape-content">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <span>35kmi</span>
+                      </div>
+                    </div>
+                   
+                  </div>
+
+                  <div class="single-shape">
+                    <div class="inner-shape">
+                      <div class="shape-content">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <span>38/45</span>
+                      </div>
+                    </div>
+                   
+                  </div>
+
+                  <div class="single-shape">
+                    <div class="inner-shape">
+                      <div class="shape-content">
+                        <i class="fas fa-gas-pump"></i>
+                        <span>Manual</span>
+                      </div>
+                    </div>
+                   
+                  </div>
+
+                  <div class="single-shape">
+                    <div class="inner-shape">
+                      <div class="shape-content">
+                        <i class="fas fa-car-side"></i>
+                        <span>2019</span>
+                      </div>
+                    </div>
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="lower-booster"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CARDS -->
+    <section class="cards">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 ">
+            <div class="explore d-flex justify-content-between
+             align-items-center">
+              <h2>Explore All Vehicles</h2>
+              <a href="#" class="d-flex align-items-center">View All <i class="ms-2 fas fa-long-arrow-alt-up"></i
+                ></a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="cars-type d-flex
+            align-items-center gap-5">
+              <li>
+                <a class="under" href="">Recent Cars</a>
+              </li>
+              <li>
+                <a href="">Featured Cars</a>
+              </li>
+              <li>
+                <a href="">Popular Cars</a>
+              </li>
+            </div>
+          </div>
+        </div>
+       
+          <div class="row card-row-1" id="all-products">
+            <!-- <div class="col-3">
+              <div class="card">
+                <div class="card-img">
+                  <img class="img-fluid" src="./images/cards/car1-660x440.jpg" alt="">
+                  <a class="heart" href="#"><i class="fas fa-heart"></i></a>
+                  <div class="overlay">
+                   <div class="go">
+                    <a href="#">
+                      <i class="fas fa-long-arrow-alt-up"></i>
+                    <p class="mb-0">go on</p>
+                    </a>
+                   </div>
+                </div>
+                </div>
+                <div class="card-content">
+                  <div class="content-header">
+                    <h5>Toyota Camry New</h5>
+                    <p class="mb-0">3.5 D5 PowerPulse Momentum 5dr AW..</p>
+                  </div>
+                  <div class="content-mid d-flex justify-content-between align-items-center">
+                    <div class="single-mid d-flex flex-column 
+                    justify-content-between align-items-center gap-1">
+                      <i class="fas fa-tachometer-alt"></i>
+                      <p>20 miles</p>
+                    </div>
+                    <div class="single-mid d-flex flex-column justify-content-between align-items-center">
+                      <i class="fas fa-gas-pump"></i>
+                      <p>petrol</p>
+                    </div>
+                    <div class="single-mid d-flex flex-column justify-content-between align-items-center">
+                      <i class="fas fa-gas-pump"></i>
+    
+                      <p>Automatic</p>
+                    </div>
+                  </div>
+    
+                  <div class="content-footer d-flex justify-content-between">
+                    <span class="price">$40,000</span>
+                    <span><a href="">view details <i class="fas fa-left-arrow"></i></a></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-3">
+              <div class="card">
+                <div class="card-img">
+                  <img class="img-fluid" src="./images/cards/car1-660x440.jpg" alt="">
+                  <a class="heart" href="#"><i class="fas fa-heart"></i></a>
+                  <div class="overlay">
+                   <div class="go">
+                    <a href="#">
+                      <i class="fas fa-long-arrow-alt-up"></i>
+                    <p class="mb-0">go on</p>
+                    </a>
+                   </div>
+                </div>
+                </div>
+                <div class="card-content">
+                  <div class="content-header">
+                    <h5>Toyota Camry New</h5>
+                    <p class="mb-0">3.5 D5 PowerPulse Momentum 5dr AW..</p>
+                  </div>
+                  <div class="content-mid d-flex justify-content-between align-items-center">
+                    <div class="single-mid d-flex flex-column 
+                    justify-content-between align-items-center gap-1">
+                      <i class="fas fa-tachometer-alt"></i>
+                      <p>20 miles</p>
+                    </div>
+                    <div class="single-mid d-flex flex-column justify-content-between align-items-center">
+                      <i class="fas fa-gas-pump"></i>
+                      <p>petrol</p>
+                    </div>
+                    <div class="single-mid d-flex flex-column justify-content-between align-items-center">
+                      <i class="fas fa-gas-pump"></i>
+    
+                      <p>Automatic</p>
+                    </div>
+                  </div>
+    
+                  <div class="content-footer d-flex justify-content-between">
+                    <span class="price">$40,000</span>
+                    <span><a href="">view details <i class="fas fa-left-arrow"></i></a></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-3">
+              <div class="card">
+                <div class="card-img">
+                  <img class="img-fluid" src="./images/cards/car1-660x440.jpg" alt="">
+                  <a class="heart" href="#"><i class="fas fa-heart"></i></a>
+                  <div class="overlay">
+                   <div class="go">
+                    <a href="#">
+                      <i class="fas fa-long-arrow-alt-up"></i>
+                    <p class="mb-0">go on</p>
+                    </a>
+                   </div>
+                </div>
+                </div>
+                <div class="card-content">
+                  <div class="content-header">
+                    <h5>Toyota Camry New</h5>
+                    <p class="mb-0">3.5 D5 PowerPulse Momentum 5dr AW..</p>
+                  </div>
+                  <div class="content-mid d-flex justify-content-between align-items-center">
+                    <div class="single-mid d-flex flex-column 
+                    justify-content-between align-items-center gap-1">
+                      <i class="fas fa-tachometer-alt"></i>
+                      <p>20 miles</p>
+                    </div>
+                    <div class="single-mid d-flex flex-column justify-content-between align-items-center">
+                      <i class="fas fa-gas-pump"></i>
+                      <p>petrol</p>
+                    </div>
+                    <div class="single-mid d-flex flex-column justify-content-between align-items-center">
+                      <i class="fas fa-gas-pump"></i>
+    
+                      <p>Automatic</p>
+                    </div>
+                  </div>
+    
+                  <div class="content-footer d-flex justify-content-between">
+                    <span class="price">$40,000</span>
+                    <span><a href="">view details <i class="fas fa-left-arrow"></i></a></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-3">
+              <div class="card">
+                <div class="card-img">
+                  <img class="img-fluid" src="./images/cards/car1-660x440.jpg" alt="">
+                  <a class="heart" href="#"><i class="fas fa-heart"></i></a>
+                  <div class="overlay">
+                   <div class="go">
+                    <a href="#">
+                      <i class="fas fa-long-arrow-alt-up"></i>
+                    <p class="mb-0">go on</p>
+                    </a>
+                   </div>
+                </div>
+                </div>
+                <div class="card-content">
+                  <div class="content-header">
+                    <h5>Toyota Camry New</h5>
+                    <p class="mb-0">3.5 D5 PowerPulse Momentum 5dr AW..</p>
+                  </div>
+                  <div class="content-mid d-flex justify-content-between align-items-center">
+                    <div class="single-mid d-flex flex-column 
+                    justify-content-between align-items-center gap-1">
+                      <i class="fas fa-tachometer-alt"></i>
+                      <p>20 miles</p>
+                    </div>
+                    <div class="single-mid d-flex flex-column justify-content-between align-items-center">
+                      <i class="fas fa-gas-pump"></i>
+                      <p>petrol</p>
+                    </div>
+                    <div class="single-mid d-flex flex-column justify-content-between align-items-center">
+                      <i class="fas fa-gas-pump"></i>
+    
+                      <p>Automatic</p>
+                    </div>
+                  </div>
+    
+                  <div class="content-footer d-flex justify-content-between">
+                    <span class="price">$40,000</span>
+                    <span><a href="">view details <i class="fas fa-left-arrow"></i></a></span>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+          </div>
+  
+          <!-- <div class="row  ">
+            <div class="col-3">
+              <div class="card">
+                <div class="card-img">
+                  <img class="img-fluid" src="./images/cards/car1-660x440.jpg" alt="">
+                  <a class="heart" href="#"><i class="fas fa-heart"></i></a>
+                  <div class="overlay">
+                   <div class="go">
+                    <a href="#">
+                      <i class="fas fa-long-arrow-alt-up"></i>
+                    <p class="mb-0">go on</p>
+                    </a>
+                   </div>
+                </div>
+                </div>
+                <div class="card-content">
+                  <div class="content-header">
+                    <h5>Toyota Camry New</h5>
+                    <p class="mb-0">3.5 D5 PowerPulse Momentum 5dr AW..</p>
+                  </div>
+                  <div class="content-mid d-flex justify-content-between align-items-center">
+                    <div class="single-mid d-flex flex-column 
+                    justify-content-between align-items-center gap-1">
+                      <i class="fas fa-tachometer-alt"></i>
+                      <p>20 miles</p>
+                    </div>
+                    <div class="single-mid d-flex flex-column justify-content-between align-items-center">
+                      <i class="fas fa-gas-pump"></i>
+                      <p>petrol</p>
+                    </div>
+                    <div class="single-mid d-flex flex-column justify-content-between align-items-center">
+                      <i class="fas fa-gas-pump"></i>
+    
+                      <p>Automatic</p>
+                    </div>
+                  </div>
+    
+                  <div class="content-footer d-flex justify-content-between">
+                    <span class="price">$40,000</span>
+                    <span><a href="">view details <i class="fas fa-left-arrow"></i></a></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-3">
+              <div class="card">
+                <div class="card-img">
+                  <img class="img-fluid" src="./images/cards/car1-660x440.jpg" alt="">
+                  <a class="heart" href="#"><i class="fas fa-heart"></i></a>
+                  <div class="overlay">
+                   <div class="go">
+                    <a href="#">
+                      <i class="fas fa-long-arrow-alt-up"></i>
+                    <p class="mb-0">go on</p>
+                    </a>
+                   </div>
+                </div>
+                </div>
+                <div class="card-content">
+                  <div class="content-header">
+                    <h5>Toyota Camry New</h5>
+                    <p class="mb-0">3.5 D5 PowerPulse Momentum 5dr AW..</p>
+                  </div>
+                  <div class="content-mid d-flex justify-content-between align-items-center">
+                    <div class="single-mid d-flex flex-column 
+                    justify-content-between align-items-center gap-1">
+                      <i class="fas fa-tachometer-alt"></i>
+                      <p>20 miles</p>
+                    </div>
+                    <div class="single-mid d-flex flex-column justify-content-between align-items-center">
+                      <i class="fas fa-gas-pump"></i>
+                      <p>petrol</p>
+                    </div>
+                    <div class="single-mid d-flex flex-column justify-content-between align-items-center">
+                      <i class="fas fa-gas-pump"></i>
+    
+                      <p>Automatic</p>
+                    </div>
+                  </div>
+    
+                  <div class="content-footer d-flex justify-content-between">
+                    <span class="price">$40,000</span>
+                    <span><a href="">view details <i class="fas fa-left-arrow"></i></a></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-3">
+              <div class="card">
+                <div class="card-img">
+                  <img class="img-fluid" src="./images/cards/car1-660x440.jpg" alt="">
+                  <a class="heart" href="#"><i class="fas fa-heart"></i></a>
+                  <div class="overlay">
+                   <div class="go">
+                    <a href="#">
+                      <i class="fas fa-long-arrow-alt-up"></i>
+                    <p class="mb-0">go on</p>
+                    </a>
+                   </div>
+                </div>
+                </div>
+                <div class="card-content">
+                  <div class="content-header">
+                    <h5>Toyota Camry New</h5>
+                    <p class="mb-0">3.5 D5 PowerPulse Momentum 5dr AW..</p>
+                  </div>
+                  <div class="content-mid d-flex justify-content-between align-items-center">
+                    <div class="single-mid d-flex flex-column 
+                    justify-content-between align-items-center gap-1">
+                      <i class="fas fa-tachometer-alt"></i>
+                      <p>20 miles</p>
+                    </div>
+                    <div class="single-mid d-flex flex-column justify-content-between align-items-center">
+                      <i class="fas fa-gas-pump"></i>
+                      <p>petrol</p>
+                    </div>
+                    <div class="single-mid d-flex flex-column justify-content-between align-items-center">
+                      <i class="fas fa-gas-pump"></i>
+    
+                      <p>Automatic</p>
+                    </div>
+                  </div>
+    
+                  <div class="content-footer d-flex justify-content-between">
+                    <span class="price">$40,000</span>
+                    <span><a href="">view details <i class="fas fa-left-arrow"></i></a></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-3">
+              <div class="card">
+                <div class="card-img">
+                  <img class="img-fluid" src="./images/cards/car1-660x440.jpg" alt="">
+                  <a class="heart" href="#"><i class="fas fa-heart"></i></a>
+                  <div class="overlay">
+                   <div class="go">
+                    <a href="#">
+                      <i class="fas fa-long-arrow-alt-up"></i>
+                    <p class="mb-0">go on</p>
+                    </a>
+                   </div>
+                </div>
+                </div>
+                <div class="card-content">
+                  <div class="content-header">
+                    <h5>Toyota Camry New</h5>
+                    <p class="mb-0">3.5 D5 PowerPulse Momentum 5dr AW..</p>
+                  </div>
+                  <div class="content-mid d-flex justify-content-between align-items-center">
+                    <div class="single-mid d-flex flex-column 
+                    justify-content-between align-items-center gap-1">
+                      <i class="fas fa-tachometer-alt"></i>
+                      <p>20 miles</p>
+                    </div>
+                    <div class="single-mid d-flex flex-column justify-content-between align-items-center">
+                      <i class="fas fa-gas-pump"></i>
+                      <p>petrol</p>
+                    </div>
+                    <div class="single-mid d-flex flex-column justify-content-between align-items-center">
+                      <i class="fas fa-gas-pump"></i>
+    
+                      <p>Automatic</p>
+                    </div>
+                  </div>
+    
+                  <div class="content-footer d-flex justify-content-between">
+                    <span class="price">$40,000</span>
+                    <span><a href="">view details <i class="fas fa-left-arrow"></i></a></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        
+      </div>
+    </section>
+
+
+    <footer>
+      <!-- FOOTER-2 -->
+      <img class="footer-car" src="./images/footer/footer-decor-image-min.png" alt="">
+      <div class="footer-decore"></div>
+      <div class="footer-2">
+        <div class="container">
+          <div class="row ">
+            <div class="col-5">
+              <div class="about d-flex flex-column gap-4">
+                <div class="about-cont d-flex flex-column gap-4">
+                  <img src="./images/footer/footer-logotype-min.png" alt="" />
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Expedita repudiandae neque illum aspernatur fugiat maiores
+                    id magni, modi, quaerat vitae.
+                  </p>
+                </div>
+
+                <div class="input-box-container">
+                  <label>Subscribe Newsletter</label>
+                  <div class="input-box position-relative">
+                    <input class="bg-transparent" placeholder="your email" type="text" />
+                    <i class="fas fa-user"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 pe-5">
+              <div class="contact d-flex flex-column align-items-end">
+                <h2>Dealer Information</h2>
+                <div class="hours d-flex flex-column justify-content-center gap-2">
+                  <div class="two-t">
+                    <h4 class="text-white fs-5">Sales Hours</h4>
+                    <p class="mb-1">Mon - Fri: 09:00 am to 06:00 pm</p>
+                    <p class="mb-3">Mon - Fri: 09:00 am to 06:00 pm</p>
+                  </div>
+                  <div class="two-t">
+                    <h4 class="text-white" >Sales Hours</h4>
+                    <p class="mb-1">Mon - Fri: 09:00 am to 06:00 pm</p>
+                    <p class="mb-3">Mon - Fri: 09:00 am to 06:00 pm</p>
+                  </div>
+                  <div class="two-t">
+                    <h4 class="text-white">Sales Hours</h4>
+                    <p class="mb-1">Mon - Fri: 09:00 am to 06:00 pm</p>
+                    <p class="mb-3">Mon - Fri: 09:00 am to 06:00 pm</p>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="col-3">
+              <div class="gallery d-flex flex-column gap-4">
+                <h2>Get In Touch</h2>
+                <div
+                  class="footer-social d-flex flex-column align-items-start gap-4"
+                >
+                  <div
+                    class="single d-flex justify-content-center align-items-center gap-3"
+                  >
+                    <i class="fas fa-map-marker-alt"></i>
+
+                    <span>Fairview Ave, El Monte, CA 91732</span>
+                  </div>
+
+                  <div
+                    class="single d-flex justify-content-center align-items-center gap-3"
+                  >
+                    <i class="fas fa-envelope"></i>
+                    <span>support@example.com</span>
+                  </div>
+
+                  <div
+                    class="single d-flex justify-content-center align-items-center gap-3"
+                  >
+                    <i class="fas fa-phone-alt"></i>
+
+                    <span>Phone:+1 755 302 8549</span>
+                  </div>
+                </div>
+
+                <ul class="nav justify-content-start">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">
+                      <i class="fas fa-eye-slash"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">
+                      <i class="far fa-life-ring"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">
+                      <i class="fas fa-shopping-cart"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">
+                      <i class="fas fa-eye-slash"></i>
+                    </a>
+                  </li>
+                </ul>
+
+                
+                  <a
+                    href="#"
+                    class="foot-btn text-center"
+                    >TAKE A TEST DRIVE
+                    </i
+                  ></a>
+           
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- FOOTER-3 -->
+
+      <div class="footer-3">
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <h4>&copy; Mehreb 2023 . All rights reserved.</h4>
+            </div>
+            <div class="col-6 text-end">
+              <a href="">read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
